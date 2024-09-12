@@ -1,0 +1,93 @@
+{
+    "data" : [
+        {
+        "title": "Social Media Networking Model",
+        "emoji": "📱",
+        "language": "C",
+        "date": "March • 2024",
+        "description" : "Developed a dynamic networking model that allows users to manage friendships and brand affiliation. The project leverages several unique data structures joint with matricies to establish complex relationships between users and brands.Intensive debugging techniques as well as unit testing were involved in the process to establish reliable code. Additional programs were used as well to help program's sustainability, such as GNU debugger."
+
+    },
+    {
+        "title": "Word Frequency Application",
+        "emoji": "📖",
+        "language": "Java",
+        "date": "January • 2023",
+        "description": "Designed and utilized complex algorithms to efficiently count word frequency of any large dynamic texts. Prioritizing time complexity and efficiency allowed for instantaneous outputs after given substantial inputs such as Herman Melville's Moby Dick."
+
+    },
+    {
+        "title": "Gun Man (Game)",
+        "emoji": "🎮",
+        "language": "Java",
+        "date": "June • 2023",
+        "description": "Synthetically developed a game application that involves Object-Oriented-Programming for structured reusable models. The program is a 2 dimensional platform game that generates ficitional characters (targets). Your goal is to use the mechanics of each unique weapon to hit the targets. The game was inspired off of a prexisting mobile game called Mr Gun."
+    },
+    {
+        "title": "Flappy Face",
+        "emoji": "🐦",
+        "language": "Python",
+        "date": "December • 2021",
+        "description": "Designed and remade the notorious mobile game Flappy Bird. Leveraged objects to create several playable characters as the 'bird' in Flappy Bird. The game was developed for replayability with a ever-expanding map to the game. Encorporated several unique additions to base game with speeding up the movement when passed a certain score."
+    },
+    {
+        "title": "Path Finding Sum",
+        "emoji": "🔎",
+        "language" : "Java",
+        "date": "February • 2023",
+        "description": "Given a 2D matrix with each index holding a integer value, the program was able to find the cheapest route to the desired end location. By utilizing recursion and path finding algoirthms such as BFS and DFS, the program was successfully able to handle complex large matricies. In addition, some indicies were blocked for unique path finding problems."
+    },
+    {
+        "title": "Wordle",
+        "emoji": "📖",
+        "language" : "Python",
+        "date": "August • 2023",
+        "description": "Engineered a locally stored replica of the infamous game Wordle. By using Web Scrappers such as BeautifulSoup, the game achieved an ever-expanding vocabulary for the game's guessable words. In addition, a user-interface was implemented for user base quality of life."
+
+    },
+    {
+        "title": "Records Collection System",
+        "emoji": "💿",
+        "language" : "Java",
+        "date": "March • 2023",
+        "description": "Constructed a Object-Oriented-Programming based CD collection system. Utilized custom comparable functions for sorting algorithms to utilize. Progam was tested for scalability with efficient sorting and searching algorithms for user interactions. Progams interface was based off file management systems like file explorer for user comfort."
+    },
+    {
+        "title": "Prediction of Housing Prices",
+        "emoji": "🏠",
+        "language": "Python",
+        "date": "December • 2023",
+        "description": "Given an online dataset regarding housing and their attributes such as number of washrooms, number of bedrooms, location of house, square footage etc, the model achieved 90% accuracy for house price predictions. The modoel utilized PyTorch to achieve these results."
+
+    },
+    {
+        "title": "Front-End Mentor",
+        "emoji": "🌐",
+        "language": "Javascript",
+        "date": "May • 2024",
+        "description": "Learnt front-end development by practiciing creating landing pages offered from Front-End Mentor. Given a UX design, I was able to successfully replicate given designs and encorporate website functions such as animations or mobile experience."
+    },
+    {
+        "title": "Bridge Management Progam",
+        "emoji": "🌉",
+        "language": "Python",
+        "date": "October • 2023",
+        "description": "Provided a real life data set on bridges in Ontario, the function gave notable information regarding bridge maintenance and data. Offered information such as date built, last inspection, provided BCI for bridge values regarding structural infrastructure, and bridge length. In addition the program automatically assigned local inspectors for nearby bridges."
+    },
+    {
+        "title": "Black Jack Trainer",
+        "emoji": "🃏",
+        "language": "Python",
+        "date": "January • 2024",
+        "description": "Developed a black jack game that provides user feedback for optimal winnings. The program calculates the best possible move given the player's situation (i.e. whether to stand, hit, or split)."
+    },
+    {
+        "title": "Comment Section",
+        "emoji": "💬",
+        "language": "Javascript",
+        "date": "July • 2024",
+        "description": "Built a fully functional front-end use commenting system. The infrastructure stack for this web application is using HTML, CSS, JS, and React. The program utilized object models that accurately respresents user information, posts, and replies. Using objects allows for a dynamic system while attaining scalability and readibilty as features."
+    }
+    ]
+
+}

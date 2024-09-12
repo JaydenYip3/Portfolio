@@ -1,0 +1,44 @@
+
+#about{
+    max-width: 1000px;
+    width: 100vw;
+    flex-direction: column;
+}
+#about img{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+#about p{
+    color: white;
+}
+
+#introText{
+    margin-bottom: 5em;
+    justify-content: center;
+
+}
+#introText h1{
+    font-size: 5em;
+}
+#introText h2{
+    max-width: 550px;
+    color:white;
+}
+#introText p{
+    max-width: 550px;
+    color:white;
+}
+.mobile{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+    .mobile{
+        flex-direction: column;
+    }
+}

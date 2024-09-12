@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
+
+#project{
+    display: flex;
+    flex-direction: column;
+
+    line-height: 40px;
+}
+#project p{
+    color: rgb(201, 201, 201);
+}
+#project h2{
+    color: rgb(199, 191, 191);
+    line-height: 30px;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+#project h1,h2{
+    font-family: 'Hepta Slab', Georgia, serif ;
+}
+#project h1{
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.about{
+    background-color: transparent;
+    margin-left: auto;
+  }
+  .more{
+    display: inline-block;
+    font-size: 1.3rem;
+    border: 2px solid rgb(62, 175, 255);
+    background-color: transparent;
+    padding: 0.6em;
+    margin-left: auto;
+    border-radius: 40px;
+    color: rgb(62,175,255);
+    font-size: 1rem;
+    transition: .3s background-color;
+    box-sizing: border-box;
+  }
+  .more:hover{
+    color: #151821;
+    background-color: rgb(62,175,255);
+  }
+
+.line{
+    flex-grow: 1;
+    border-top: 2px dotted  rgba(181, 180, 180, 0.747);
+    align-self: center;
+    margin-right: 6px
+}
+  @media screen and (max-width: 500px) {
+    .more{
+        font-size: 1.3rem;
+        border: 2px solid rgb(62, 175, 255);
+        background-color: transparent;
+        padding: 0.6em;
+        border-radius: 40px;
+        color: rgb(62,175,255);
+        font-size: 1rem;
+        margin: 0;
+        flex: 1;
+      }
+    .line{
+        display: none;
+    }
+  }
+
+  .about h1:hover{
+    background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 4s linear infinite;
+  }
+
+  @keyframes animate-gradient{
+    to{
+      background-position: -200%;
+    }
+
+  }

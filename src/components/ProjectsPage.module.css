@@ -1,0 +1,86 @@
+#front{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 1000px;
+    width: 100vw;
+}
+
+.title{
+    color: white;
+    background-color: #1e2537;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select:none;
+    font-size: 1em;
+    color: white;
+    font-weight: 600;
+}
+.title h2{
+    font-weight: 400;
+    font-size: 1.4em;
+    color: rgb(227, 227, 227);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 1.2em;
+    padding-top: 0;
+    background-color: #1e2537;
+    transition: all 0.2s linear;
+    opacity: 1;
+    visibility: visible;
+}
+.hide{
+    visibility:hidden;
+    height: 0;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+.sort{
+    display: flex;
+    background-color: #1e2537;
+    border: 1px solid white;
+    padding: 0.5em;
+    cursor: pointer;
+    color: white;
+    user-select: none;
+    transition: all 0.2s linear;
+    font-size: 0.8em;
+    font-family: 'Hepta Slab', Georgia, serif ;
+  }
+
+.search{
+    display: flex;
+    display: flex;
+    background-color: none;
+    border: 1px solid white;
+    padding: 0.5em;
+    width: 100px;
+}
+.font{
+    font-family: 'Hepta Slab', Georgia, serif ;
+    font-weight: 100;
+    font-size: 0.8em;
+}
+
+#button2:active{
+    background-color: white;
+    color: #151821;
+}
+
+.dropdown{
+    display: block;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 150px;
+    height: auto;
+    border: 1px solid #ddd;
+    z-index: 2;
+    top: 100%;  /* Makes the dropdown appear right below the Filter button */
+    left: 0;    /* Aligns the dropdown to the left edge of the Filter button */
+  }

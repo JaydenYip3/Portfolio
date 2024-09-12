@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.font1{
+  font-family: 'Hepta Slab', Georgia, serif ;
+  font-size: 1.4rem;
+}
+#home{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 1920px;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+#home p{
+  color:rgba(225, 225, 225, 0.79);
+  margin-right: auto;
+}
+.darker{
+  color: rgba(255, 255, 255, 0.51);
+}
+.image{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+#home h1{
+  font-size: max(min(15em, 10vw), 4.8em);
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: clip;
+  background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  opacity: 1;
+  animation: animate-gradient 2s linear infinite;
+  z-index: -1;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.216));
+  line-height: 0.7em;
+
+
+}
+h1{
+  color:white;
+}
+#intro{
+  display: flex;
+  padding: 12em;
+  flex-direction: column;
+}
+.about{
+  background-color: transparent;
+  margin-left: auto;
+}
+
+.about h1:hover{
+  background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 4s linear infinite;
+}
+.robfont{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: .5ch;
+}
+@media screen and (max-width: 1000px) {
+  #content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+}
+
+
+@keyframes animate-gradient{
+  to{
+    background-position: -200%;
+  }
+
+}
+@keyframes color-change {
+  from {
+    background: none; /* Start without gradient */
+    -webkit-text-fill-color: white; /* Text is fully visible initially */
+    background: none;/* Ensuring text is visible for non-webkit browsers initially */
+  }
+  to {
+    background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
+  }
+}
+
+
+
+@keyframes fade-in{
+  to{
+    scale:1;
+    opacity: 1;
+  }
+}
+@keyframes appear{
+  to{opacity: 1;}
+}
