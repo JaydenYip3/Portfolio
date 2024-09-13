@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import styles2 from "./Cards.module.css"
+import React from 'react'
 
 const Cards = () => {
     const [card, setCard] = useState(0);

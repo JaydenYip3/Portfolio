@@ -1,7 +1,8 @@
 import {motion} from "framer-motion"
 import projects from "../assets/data.json";
 import styles3 from "./ProjectsPage.module.css"
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
+import React from 'react'
 
 
 const ProjectsPage = () => {

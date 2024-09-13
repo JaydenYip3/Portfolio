@@ -1,6 +1,7 @@
 import styles from "./Home.module.css"
 import Projects from "./Projects"
 import {motion} from "framer-motion"
+import React from 'react'
 
 const Home = ({page,setPage}) => {
 

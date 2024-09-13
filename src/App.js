@@ -3,6 +3,7 @@ import './App.css';
 import Home from './components/Home.js'
 import ProjectsPage from './components/ProjectsPage.js'
 import About from './components/About.js'
+import React from 'react'
 
 
 function App() {

@@ -1,5 +1,6 @@
 import styles2 from "./Projects.module.css"
 import {motion} from "framer-motion"
+import React from 'react'
 
 const Projects = ({page, setPage}) => {
     return (
