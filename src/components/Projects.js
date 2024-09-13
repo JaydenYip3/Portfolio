@@ -17,7 +17,10 @@ const Projects = ({page, setPage}) => {
                     transition={{
                         duration: .5,
                         ease: "easeOut"}}>
-                    <h1>📱 Social Media Networking Model</h1>
+                    <h1>
+                        <span role="img" aria-label="Mobile Phone Emoji">📱</span> Social Media Networking Model
+                    </h1>
+
                     <p>March • 2024 | &nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/760px-C_Programming_Language.svg.png?20201031132917" alt="C Programming Logo" style={{height: "1em", verticalAlign: 'text-top'}}/></p>
                     <h2>Developed a dynamic networking model that allows users to manage friendships and brand affiliation.
                         The project leverages several unique data structures joint with matricies to establish complex relationships
@@ -36,7 +39,9 @@ const Projects = ({page, setPage}) => {
                     transition={{
                         duration: .5,
                         ease: "easeOut"}}>
-                    <h1>💬 Comment Section</h1>
+                    <h1>
+                        <span role="img" aria-label="Comment Icon">💬</span> Comment Section
+                    </h1>
                     <p>July • 2024 | &nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Javascript Progamming Logo" style={{height: "1em", verticalAlign: 'text-top'}}/></p>
                     <h2>Built a fully functional front-end use commenting system. The infrastructure stack for this web application is using HTML, CSS, JS, and React. The program utilized object
                         models that accurately respresents user information, posts, and replies. Using objects allows for a dynamic system while attaining scalability and readibilty as features.
@@ -53,7 +58,9 @@ const Projects = ({page, setPage}) => {
                     transition={{
                         duration: .5,
                         ease: "easeOut"}}>
-                    <h1>💿 Records Collection System</h1>
+                    <h1>
+                        <span role="img" aria-label="Optical Disc">💿</span> Records Collection System
+                    </h1>
                     <p>March • 2023 | &nbsp;<img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png" alt="Java Progamming Logo" style={{height: "1em", verticalAlign: 'center'}}></img>(Java)</p>
                     <h2>Constructed a Object-Oriented-Programming based CD collection system. Utilized custom comparable functions for sorting algorithms to utilize. Progam was tested for scalability with efficient sorting and searching algorithms for user interactions. Progams interface was based off file management systems like file explorer for user comfort.
                     </h2>

@@ -1,8 +1,8 @@
 import {motion} from "framer-motion"
 import projects from "../assets/data.json";
 import styles3 from "./ProjectsPage.module.css"
-import {useState} from 'react';
 import React from 'react'
+import {useState} from 'react';
 
 
 const ProjectsPage = () => {
@@ -10,10 +10,10 @@ const ProjectsPage = () => {
     const [select, setSelect] = useState(null);
     const [subList, setSubList] = useState(projects.data)
     const [Confirm, setConfirm] = useState(projects.data)
-    const [listStyle, setListStyle] = useState({color: 'white', backgroundColor: '#151821' });
+
     const [Sort, SetSort] = useState(0);
     const [text, SetText] = useState('Unsorted');
-    const [filter, setFilter] = useState(false);
+
     const [arrState, setArrState] = useState(false);
     const state = {
         options: [{name: 'C', id: 1},{name: 'Java', id: 2}, {name: 'Python', id: 3}]
@@ -178,10 +178,9 @@ const ProjectsPage = () => {
                                 () => {
                                     setSubList(projects.data);
                                     setConfirm(projects.data);
-                                    setListStyle({color: 'white', backgroundColor: '#151821' })
                                     setSelect(null);
                                     SetSort(0);
-                                    setFilter(false);
+
                                     setArrState(false);
                                     setCheckboxStates({
                                         C: true,
