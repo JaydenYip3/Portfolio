@@ -39,7 +39,7 @@
     },
     {
         "title": "Wordle",
-        "emoji": "🇼",
+        "emoji": "📗",
         "language" : "Python",
         "date": "August • 2023",
         "description": "Engineered a locally stored replica of the infamous game Wordle. By using Web Scrappers such as BeautifulSoup, the game achieved an ever-expanding vocabulary for the game's guessable words. In addition, a user-interface was implemented for user base quality of life."
