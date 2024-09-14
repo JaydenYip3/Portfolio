@@ -4,6 +4,7 @@ import Home from './components/Home.js'
 import ProjectsPage from './components/ProjectsPage.js'
 import About from './components/About.js'
 import React from 'react'
+import Contact from './components/Contact.js';
 
 
 function App() {
@@ -69,7 +70,7 @@ function App() {
         {page === "Home" && <Home page={page} setPage={setPage}></Home>}
         {page === "Projects" && <ProjectsPage></ProjectsPage>}
         {page === "About" && <About></About>}
-        {page === "Page 4" && <div>Page 4 Content</div>}
+        {page === "Contact" && <Contact></Contact>}
       </div>
 
     </>

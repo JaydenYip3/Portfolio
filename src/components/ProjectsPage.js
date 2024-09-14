@@ -2,7 +2,7 @@ import {motion} from "framer-motion"
 import projects from "../assets/data.json";
 import styles3 from "./ProjectsPage.module.css"
 import React from 'react'
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 
 const ProjectsPage = () => {
@@ -85,12 +85,38 @@ const ProjectsPage = () => {
         setSelect(i);
     }
 
-    const onSelect = () => {
+    useEffect(()=> {
+        const languages = [];
+        for (let lang in checkboxStates) {
+            if (checkboxStates[lang]) {
+                languages.push(lang);
+            }
+        }
+        const filterList = projects.data.filter(project =>
+            languages.includes(project.language)
+        );
+        let sortedList;
+        if (Sort === 1) {
+            // Sort A-Z by title
+            sortedList = [...filterList].sort((a, b) =>
+                a.title.toLowerCase().localeCompare(b.title.toLowerCase()));
+        } else if (Sort === 2) {
+            // Sort Z-A by title
+            sortedList = [...filterList].sort((a, b) =>
+                b.title.toLowerCase().localeCompare(a.title.toLowerCase()));
+        } else if (Sort === 3) {
+            // Sort by date, assuming dates are in a comparable format like 'YYYY-MM-DD'
+            sortedList = [...filterList].sort((a, b) =>
+                new Date(b.date) - new Date(a.date));
+        } else {
+            // No sorting applied, just use the filtered list
+            sortedList = [...filterList];
+        }
 
-    }
-    const onRemove = () => {
-
-    }
+        setSubList(sortedList);
+        setConfirm(sortedList);
+        setSelect(null);
+    },[checkboxStates])
 
 
     return(
@@ -191,40 +217,6 @@ const ProjectsPage = () => {
                                     SetText('Unsorted')
                                 }
                             } id={styles3.button2}>Reset</button>
-                            <button className={styles3.sort} onClick={
-                                () => {
-                                    const languages = [];
-                                    for (let lang in checkboxStates) {
-                                        if (checkboxStates[lang]) {
-                                            languages.push(lang);
-                                        }
-                                    }
-                                    const filterList = projects.data.filter(project =>
-                                        languages.includes(project.language)
-                                    );
-                                    let sortedList;
-                                    if (Sort === 1) {
-                                        // Sort A-Z by title
-                                        sortedList = [...filterList].sort((a, b) =>
-                                            a.title.toLowerCase().localeCompare(b.title.toLowerCase()));
-                                    } else if (Sort === 2) {
-                                        // Sort Z-A by title
-                                        sortedList = [...filterList].sort((a, b) =>
-                                            b.title.toLowerCase().localeCompare(a.title.toLowerCase()));
-                                    } else if (Sort === 3) {
-                                        // Sort by date, assuming dates are in a comparable format like 'YYYY-MM-DD'
-                                        sortedList = [...filterList].sort((a, b) =>
-                                            new Date(b.date) - new Date(a.date));
-                                    } else {
-                                        // No sorting applied, just use the filtered list
-                                        sortedList = [...filterList];
-                                    }
-
-                                    setSubList(sortedList);
-                                    setConfirm(sortedList);
-                                    setSelect(null);
-                                }
-                            } id={styles3.button2}>Apply</button>
                         </div>
 
                     </div>
