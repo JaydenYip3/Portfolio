@@ -44,7 +44,7 @@ const [result, setResult] = useState("");
                                 </div>
                             </div>
                             <div className={styles4.inputbox} id={styles4.emailInput}>
-                                <input type="email" required="required"/>
+                                <input type="text" name="Email" required="required"/>
                                 <span>Email Address</span>
                             </div>
                             <div className={styles4.inputbox} id={styles4.emailInput}>
