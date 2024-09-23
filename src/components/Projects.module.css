@@ -40,10 +40,15 @@
     font-size: 1rem;
     transition: .3s background-color;
     box-sizing: border-box;
+    user-select: none;
   }
   .more:hover{
     color: #151821;
     background-color: rgb(62,175,255);
+  }
+  .more:active{
+    background-color: rgb(44, 128, 188);
+    border: 2px solid rgb(44, 128, 188);
   }
 
 .line{

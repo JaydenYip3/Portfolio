@@ -14,17 +14,25 @@
     width: 40em;
     align-items: center;
     gap: 2em;
-    border: 2px solid lightgray;
     border-radius: 30px;
     padding: 2em
 }
 
+button[type=submit]{
+    padding: 0.6em;
+    border-radius: 20px;
+    border: 2px solid rgb(62, 175, 255);
+    color: rgb(62,175,255);
+    background-color: transparent;
+}
 
-
-
-#contact button{
-    padding: 1em;
-
+button[type=submit]:hover{
+    color: #151821;
+    background-color: rgb(62,175,255);
+}
+button[type=submit]:active{
+    background-color: rgb(44, 128, 188);
+    border: 2px solid rgb(44, 128, 188);
 }
 #text{
     flex-direction: row;

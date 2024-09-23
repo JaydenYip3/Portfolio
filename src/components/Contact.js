@@ -32,7 +32,8 @@ const [result, setResult] = useState("");
                 <div className="container" id={styles4.contact}>
                     <form onSubmit={onSubmit}>
                         <div className="container" id={styles4.email}>
-                            <h1>Get in Touch!</h1>
+
+                            <h1 className={styles4.container_contact}>Get in Touch!</h1>
                             <div className="container" id={styles4.text}>
                                 <div className={styles4.inputbox}>
                                     <input type="text" name="First Name" required="required"/>
@@ -46,10 +47,6 @@ const [result, setResult] = useState("");
                             <div className={styles4.inputbox} id={styles4.emailInput}>
                                 <input type="text" name="Email" required="required"/>
                                 <span>Email Address</span>
-                            </div>
-                            <div className={styles4.inputbox} id={styles4.emailInput}>
-                                <input type="text" name="Company" required="required"/>
-                                <span>Company</span>
                             </div>
                             <div className={styles4.inputbox} id={styles4.emailInput}>
                                 <textarea name="message" required="required"/>

@@ -46,13 +46,23 @@
     background-color: #1e2537;
     border: 1px solid white;
     padding: 0.5em;
+    border-radius: 10px;
     cursor: pointer;
     color: white;
+    height: 32.8px;
     user-select: none;
     transition: all 0.2s linear;
     font-size: 0.8em;
     font-family: 'Hepta Slab', Georgia, serif ;
   }
+
+.sort:hover{
+    background-color: white;
+    color: #151821;
+}
+.sort:active{
+    background-color: rgb(173, 173, 173);
+}
 
 .search{
     display: flex;
@@ -66,21 +76,42 @@
     font-family: 'Hepta Slab', Georgia, serif ;
     font-weight: 100;
     font-size: 0.8em;
-}
+    transition: all 0.2s linear;
 
-#button2:active{
-    background-color: white;
-    color: #151821;
+}
+.font:hover{
+    scale: 1.1 1.1 1;
 }
 
 .dropdown{
     display: block;
     position: absolute;
-    background-color: #f6f6f6;
+    background-color: #505662;
+    border: 2px solid #6d737f;
     min-width: 150px;
-    height: auto;
-    border: 1px solid #ddd;
+    border-radius: 5px;
     z-index: 2;
-    top: 100%;  /* Makes the dropdown appear right below the Filter button */
-    left: 0;    /* Aligns the dropdown to the left edge of the Filter button */
+    padding: 1em;
+    margin-top: -250%;
+  }
+
+  .exit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 88, 88);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: -8px;
+    margin-top: -8px;
+  }
+  .exit p{
+    font-size: 9px;
+    color:#560d0d;
+    opacity: 0;
+    user-select: none;
+  }
+  .exit:hover > p{
+    opacity: 1;
   }

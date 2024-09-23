@@ -12,7 +12,7 @@ const ProjectsPage = () => {
     const [Confirm, setConfirm] = useState(projects.data)
 
     const [Sort, SetSort] = useState(0);
-    const [text, SetText] = useState('Unsorted');
+    const [text, SetText] = useState('Default');
 
     const [arrState, setArrState] = useState(false);
     const state = {
@@ -122,39 +122,50 @@ const ProjectsPage = () => {
     return(
         <>
             <div className="container" style={{display: 'flex',marginTop: '10em', width: '100vw', justifyContent: 'center'}}>
+
                 <div className="container" id={styles3.front}>
+                    <div className="container" style={{margin: "0 auto"}}>
+                        <h1>Project Repo</h1>
+                    </div>
                     <div className="container" style={{flexDirection : 'row', gap: '1em', justifyContent: 'space-between'}}>
                         <div className="container" style={{gap: '1em'}}>
                         <div style={{position: 'relative', display: 'inline-block'}}>
                             <div className={styles3.sort}
                                 onClick={() => {
-                                    setArrState(!arrState); // Simplified toggle logic
+                                    setArrState(!arrState);
                                 }}>
-                                Filter {arrState ? '▼' : '▶'}
+                                Filter {arrState ? '▲' : '▶'}
                             </div>
                             {arrState && (
-                                <div className={styles3.dropdown}>
-                                    <div style={{display: 'flex', flexDirection: 'column'}}>
-                                        <label>
-                                            <input type="checkbox" name="C" onChange={handleCheckboxChange} checked={checkboxStates.C}/>
-                                            &nbsp;C
-                                        </label>
-                                        <label>
-                                            <input type="checkbox" name="Java" onChange={handleCheckboxChange} checked={checkboxStates.Java}/>
-                                            &nbsp;Java
-                                        </label>
-                                        <label>
-                                            <input type="checkbox" name="Python" onChange={handleCheckboxChange} checked={checkboxStates.Python}/>
-                                            &nbsp;Python
-                                        </label>
-                                        <label>
-                                            <input type="checkbox" name="Javascript" onChange={handleCheckboxChange} checked={checkboxStates.Javascript}/>
-                                            &nbsp;Javascript
-                                        </label>
-                                    </div>
-                                </div>
-                            )}
+                                    <div className={styles3.dropdown}>
+                                        <div className="container" style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', lineHeight: '21px'}}>
+                                            <div style={{display: 'flex', flexDirection: 'column', color: 'white'}}>
+                                                <label>
+                                                    <input type="checkbox" name="C" onChange={handleCheckboxChange} checked={checkboxStates.C}/>
+                                                    &nbsp;C
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="Java" onChange={handleCheckboxChange} checked={checkboxStates.Java}/>
+                                                    &nbsp;Java
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="Python" onChange={handleCheckboxChange} checked={checkboxStates.Python}/>
+                                                    &nbsp;Python
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="Javascript" onChange={handleCheckboxChange} checked={checkboxStates.Javascript}/>
+                                                    &nbsp;Javascript
+                                                </label>
+                                            </div>
+                                            <button className={styles3.exit} onClick={() => {
+                                                setArrState(!arrState);
+                                            }}>
+                                                <p>X</p>
+                                            </button>
+                                        </div>
 
+                                    </div>
+                                )}
                         </div>
                             <button className={styles3.sort} id={styles3.button2} onClick={ () => {
 
@@ -206,7 +217,6 @@ const ProjectsPage = () => {
                                     setConfirm(projects.data);
                                     setSelect(null);
                                     SetSort(0);
-
                                     setArrState(false);
                                     setCheckboxStates({
                                         C: true,
@@ -214,7 +224,7 @@ const ProjectsPage = () => {
                                         Python: true,
                                         Javascript: true
                                     })
-                                    SetText('Unsorted')
+                                    SetText('Default')
                                 }
                             } id={styles3.button2}>Reset</button>
                         </div>
@@ -224,7 +234,7 @@ const ProjectsPage = () => {
                         <>
                             <motion.div className={styles3.font} style={{display: 'block'}}
                                 initial={{ opacity: 0, scale: 0.5  }}
-                                animate={{ opacity: 1, scale: 1 , transition: { delay: stagger(i) } }}  // Apply delay here
+                                animate={{ opacity: 1, scale: 1 , transition: { delay: stagger(i) } }}
                                 transition={{ ease: "easeOut", duration: 1 }}>
                                 <div className={styles3.title} style={{color: 'white', fontWeight: '1000' }}onClick={() => toggle(i)}>
                                     <h2>{project.emoji} {project.title}</h2>
