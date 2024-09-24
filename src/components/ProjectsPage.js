@@ -125,7 +125,7 @@ const ProjectsPage = () => {
 
                 <div className="container" id={styles3.front}>
                     <div className="container" style={{margin: "0 auto"}}>
-                        <h1>Project Repo</h1>
+                        <h1>Project Gallery</h1>
                     </div>
                     <div className="container" style={{flexDirection : 'row', gap: '1em', justifyContent: 'space-between'}}>
                         <div className="container" style={{gap: '1em'}}>
@@ -217,7 +217,6 @@ const ProjectsPage = () => {
                                     setConfirm(projects.data);
                                     setSelect(null);
                                     SetSort(0);
-                                    setArrState(false);
                                     setCheckboxStates({
                                         C: true,
                                         Java: true,

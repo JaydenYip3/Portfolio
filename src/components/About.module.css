@@ -18,7 +18,7 @@
 #introText{
     margin-bottom: 5em;
     justify-content: center;
-
+    padding: 2em;
 }
 #introText h1{
     font-size: 5em;
@@ -26,6 +26,7 @@
 #introText h2{
     max-width: 550px;
     color:white;
+
 }
 #introText p{
     max-width: 550px;
@@ -37,8 +38,32 @@
     width: 100%;
     justify-content: space-between;
 }
+.languages{
+    margin-top: 2em;
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.languages > img{
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+    object-position: center;
+    transition: linear .5s;
+
+}
+
+.languages img:hover{
+    scale: 1.3;
+}
 @media screen and (max-width: 500px) {
     .mobile{
         flex-direction: column;
+    }
+    #center{
+        text-align: center;
     }
 }
