@@ -52,7 +52,7 @@ const [result, setResult] = useState("");
                                 <textarea name="message" required="required"/>
                                 <span>Your Message</span>
                             </div>
-                            <button type="submit">Submit</button>
+                            <div className={styles4.line}><button type="submit">Submit</button></div>
 
                         </div>
                     </form>

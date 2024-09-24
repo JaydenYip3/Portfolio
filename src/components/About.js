@@ -1,17 +1,6 @@
 import styles4 from './About.module.css'
 import React from 'react'
-import python from '../assets/logo_images/python.png';
-import C from '../assets/logo_images/C_Logo.png';
-import css from '../assets/logo_images/css-3.png';
-import html from '../assets/logo_images/html.png';
-import js from '../assets/logo_images/js.png'
-import next from '../assets/logo_images/next.png'
-import react from '../assets/logo_images/science.png'
-import git from '../assets/logo_images/social.png'
-import ts from '../assets/logo_images/typescript.png'
-import java from '../assets/logo_images/java.png'
-import linux from '../assets/logo_images/linux.png'
-import pytorch from '../assets/logo_images/pytorch.png'
+
 
 const About = () => {
 
@@ -54,18 +43,7 @@ const About = () => {
 
                         <div className="container">
                             <div className={styles4.languages}>
-                                <img src={js} alt=""/>
-                                <img src={ts} alt=""/>
-                                <img src={html} alt=""/>
-                                <img src={css} alt=""/>
-                                <img src={react} alt=""/>
-                                <img src={next} alt=""/>
-                                <img src={git} alt=""/>
-                                <img src={linux} alt=""/>
-                                <img src={pytorch} alt=""/>
-                                <img src={python} alt=""/>
-                                <img src={C} alt=""/>
-                                <img src={java} alt=""/>
+
 
                             </div>
                         </div>
