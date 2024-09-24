@@ -5,6 +5,8 @@ import ProjectsPage from './components/ProjectsPage.js'
 import About from './components/About.js'
 import React from 'react'
 import Contact from './components/Contact.js';
+import { Analytics } from "@vercel/analytics/react"
+
 
 
 function App() {
@@ -53,6 +55,7 @@ function App() {
 
   return (
     <>
+      <Analytics></Analytics>
       <nav>
         <ul>
           <div className={navbar ? 'active' : ''}>
