@@ -55,6 +55,7 @@ function App() {
 
   return (
     <>
+
       <Analytics></Analytics>
       <nav>
         <ul>

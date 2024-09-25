@@ -32,15 +32,6 @@ button[type=submit]{
     height: 100%;
 
 }
-.line::before, .line::after{
-    content:"";
-    background-color: white;
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 50%;
-}
 
 
 
