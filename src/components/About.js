@@ -27,7 +27,6 @@ const About = () => {
                                         I'm a student from University of Toronto studying computer science and statistics.
                                     </h2>
                                 </div>
-
                             </div>
                         </div>
                         <div className="container" style={{borderTop: 'solid #6d6d6d 1px', margin: '2em'}}></div>

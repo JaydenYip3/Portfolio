@@ -11,6 +11,7 @@ body{
   margin-bottom: 185px;
   background-color: #151821;
   margin: 0;
+  overflow-x: clip;
 
 }
 #root{
