@@ -47,7 +47,7 @@ function App() {
           "Contact": 3
         };
         const child = children[indexMap[page]];
-        buttonBackground.style.left = `${child.offsetLeft}px`;
+        buttonBackground.style.right = `${child.offsetLeft}px`;
         buttonBackground.style.width = `${child.offsetWidth}px`;
       }
     }

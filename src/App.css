@@ -49,6 +49,7 @@ nav div{
   padding: .5em;
   padding: 10px 15px 10px 15px;
   border-radius: 32px;
+  overflow: clip;
 
 }
 
