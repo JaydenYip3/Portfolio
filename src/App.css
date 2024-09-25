@@ -28,9 +28,11 @@ nav{
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100vw;
   height: 4.5em;
   z-index: 1;
+
 }
 nav div.active {
   background-color: rgba(197, 197, 197, 0.113);
