@@ -125,7 +125,7 @@ const ProjectsPage = () => {
 
                 <div className="container" id={styles3.front}>
                     <div className="container" style={{margin: "0 auto"}}>
-                        <h1>Project Gallery</h1>
+                        <h1 id={styles3.font1}>Project Gallery</h1>
                     </div>
                     <div className="container" style={{flexDirection : 'row', gap: '1em', justifyContent: 'space-between'}}>
                         <div className="container" style={{gap: '1em'}}>
@@ -204,7 +204,7 @@ const ProjectsPage = () => {
                                     if (Sort === 3){
                                         setConfirm(subList);
                                         SetSort(0);
-                                        SetText('Unsorted');
+                                        SetText('Default');
                                     }
                                     }}>
                                      {text}</button>

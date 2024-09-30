@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
+
+
+#font1{
+    font-family: 'Hepta Slab', Georgia, serif ;
+    font-weight: 600;
+    letter-spacing: 0.1ch;
+}
 #front{
     display: flex;
     flex-direction: column;

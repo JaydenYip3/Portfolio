@@ -3,7 +3,8 @@ import {useState} from 'react'
 import styles4 from "./contact.module.css"
 
 const Contact = () => {
-const [result, setResult] = useState("");
+  const [result, setResult] = useState("");
+  const [confirm, setConfirm] = useState(false);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -22,6 +23,8 @@ const [result, setResult] = useState("");
     if (data.success) {
       setResult("Form Submitted Successfully");
       event.target.reset();
+      setConfirm(true);
+
     } else {
       console.log("Error", data);
       setResult(data.message);
@@ -30,6 +33,23 @@ const [result, setResult] = useState("");
 
     return (<>
                 <div className="container" id={styles4.contact}>
+                    {confirm?
+                    <>
+                      <div className="container" id={styles4.popup}>
+                        <div className="container" id={styles4.content}>
+                          <div className="container" style={{flexDirection:'column', textAlign: 'center'}}>
+                            <h1>Successfully Submitted!</h1>
+                            <h3>Thank you for your information.</h3>
+                          </div>
+                          <button onClick={
+                            () => {
+                              setConfirm(false);
+                            }
+                          }>Exit</button>
+                        </div>
+                      </div>
+                    </>
+                    : null}
                     <form onSubmit={onSubmit}>
                         <div className="container" id={styles4.email}>
 
@@ -52,7 +72,7 @@ const [result, setResult] = useState("");
                                 <textarea name="message" required="required"/>
                                 <span>Your Message</span>
                             </div>
-                            <div className={styles4.line}><button type="submit">Submit</button></div>
+                            <button type="//submit" onClick={()=>{setConfirm(true)}}>Submit</button>
 
                         </div>
                     </form>

@@ -23,6 +23,7 @@ button[type=submit]{
     padding-left: 1.4em;
     padding-right: 1.4em;
     border-radius: 20px;
+    margin: 0 auto 0 auto;
     border: 2px solid rgb(62, 175, 255);
     color: rgb(62,175,255);
     background-color: transparent;
@@ -114,6 +115,27 @@ button[type=submit]:active{
 }
 #emailInput{
     width: 100%;
+}
+
+#popup{
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    width:100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#content{
+    min-width: 400px;
+    max-width: 800px;
+
+    background-color: #1e2537;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.4em;
+    gap: 2em;
 }
 @media screen and (max-width: 500px){
     #contact{

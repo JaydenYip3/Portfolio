@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
 
 #about{
     max-width: 1000px;
@@ -16,7 +18,7 @@
 }
 
 #introText{
-    margin-bottom: 5em;
+    margin-bottom: 1em;
 
     padding: 2em;
 }
@@ -37,7 +39,7 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-
+    justify-content: center ;
 }
 .languages{
     margin-top: 2em;
@@ -57,9 +59,20 @@
 
 }
 
+#font1{
+    font-family: 'Hepta Slab', Georgia, serif ;
+}
+#font2{
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(199, 191, 191);
+    line-height: 30px;
+    font-weight: 100;
+    font-size: 1rem;
+}
 .languages img:hover{
     scale: 1.3;
 }
+
 @media screen and (max-width: 500px) {
     .mobile{
         flex-direction: column;
