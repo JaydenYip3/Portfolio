@@ -13,6 +13,7 @@ import java from '../assets/logo_images/java.png'
 import linux from '../assets/logo_images/linux.png'
 import pytorch from '../assets/logo_images/pytorch.png'
 import arrow from '../assets/logo_images/down_arrow.png'
+import pfp from '../assets/logo_images/pfp.png'
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
@@ -25,13 +26,16 @@ const About = () => {
                 <div className="container" style={{marginTop: '10em'}}>
                     <div className="container" id={styles4.about}>
                         <div className={styles4.mobile}>
-                            <img src="" alt="" style={{alignSelf:'center'}}/>
+                            <motion.img src={pfp} alt="" style={{alignSelf:'center', width: 'auto', scale: '1.2'}} id={styles4.fade}
+                            initial={{ opacity: 0}}
+                            animate={{ opacity: 1}}
+                            transition={{ ease: "easeOut", duration: 1, delay: 0.25 }}/>
                             <motion.div className ="container" style={{ flexDirection: 'column', justifyContent: 'center'}} id={styles4.introText}
                             initial={{ opacity: 0, scale: 0.5  }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ ease: "easeOut", duration: .5 }}>
                                 <div className="container" style={{ flexDirection: 'column'}} id={styles4.center}>
-                                    <h1 id={styles4.font1}>I'm Jayden.</h1>
+                                    <h1 id={styles4.font1}>I'm Jayden</h1>
                                     <h2 id={styles4.font1} style={{fontWeight:'500', color: 'rgb(199, 191, 191)'}}>
                                         I'm a student from University of Toronto studying computer science and statistics.
                                     </h2>
