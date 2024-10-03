@@ -93,7 +93,7 @@ const Contact = () => {
               <span>Email Address</span>
             </div>
             <div className={styles4.inputbox} id={styles4.emailInput}>
-              <textarea name="message" required="required" maxLength="200"/>
+              <textarea name="message" required="required" maxLength="500"/>
               <span>Your Message</span>
             </div>
             <motion.button type="submit"
