@@ -2,11 +2,10 @@
     display: flex;
     width: 100vw;
     height: 100vh;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 2em;
-    margin-top: 2em;
+    text-align: center;
 }
 #email{
     display: flex;
@@ -15,7 +14,7 @@
     align-items: center;
     gap: 2em;
     border-radius: 30px;
-    padding: 2em
+    padding: 2em;
 }
 
 button[type=submit]{
