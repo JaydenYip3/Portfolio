@@ -80,20 +80,20 @@ const Contact = () => {
             <h3 className={styles4.container_contact} style={{ fontFamily: 'Roboto Mono', color: 'white', fontSize:'2em' }}>Reach Out Directly</h3>
             <div className="container" id={styles4.text}>
               <div className={styles4.inputbox}>
-                <input type="text" name="First Name" required="required"/>
+                <input type="text" name="First Name" required="required" maxLength="50"/>
                 <span>First Name</span>
               </div>
               <div className={styles4.inputbox}>
-                <input type="text" name="Last Name" required="required"/>
+                <input type="text" name="Last Name" required="required" maxLength="50"/>
                 <span>Last Name</span>
               </div>
             </div>
             <div className={styles4.inputbox} id={styles4.emailInput}>
-              <input type="text" name="Email" required="required"/>
+              <input type="text" name="Email" required="required" maxLength="50"/>
               <span>Email Address</span>
             </div>
             <div className={styles4.inputbox} id={styles4.emailInput}>
-              <textarea name="message" required="required"/>
+              <textarea name="message" required="required" maxLength="200"/>
               <span>Your Message</span>
             </div>
             <motion.button type="submit"
