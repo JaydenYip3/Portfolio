@@ -53,15 +53,7 @@ const About = () => {
                             <div className ="container" style={{ flexDirection: 'column', textAlign: 'center'}} id={styles4.introText}>
                                 <h1 style={{fontSize: '3em', alignSelf:'center', marginBottom: '.3em'}} id={styles4.font1}>My Story</h1>
                                 <p style={{lineHeight: '23px', overflow: 'hidden', height: '100px', transition: 'all .4s ease-in'}} ref={sizing} id={styles4.font2}>
-                                    To begin, we have to visit the historic and remarkable year of 2021. This was when the pandemic was a ongoing world-wide issue, when Joe Biden
-                                    became elected as the 48th preseident of the United States, when the first Canadian took stage at the biggest American sporting
-                                    event, but most importantly... the year I took my first introductory computer science class. Taking this
-                                    class opened my eyes to a new realm of problem-solving and critical thinking. Despite yielding a substandard grade,
-                                    I enojoyed every moment of it and decided to pursue taking more advanced computing courses. Skipping a few years later, I
-                                    had been introduced to front-end development. Thus far, although enjoying programming, it was difficult to consistently develop
-                                    precievable programs, however front-end development changed this mindset. Front-end development really brought back that
-                                    innovative creativity, freedom, and excitment every programmer once had. I plan on continuing on this path while
-                                    learning to incorporate backend management to my work for even more functionality.
+                                  My journey into the world of programming began at a young age, driven by an insatiable curiosity and a desire to create. I started with simple HTML and CSS projects, gradually expanding my skills to include JavaScript and Python. My passion for coding led me to explore various technologies, including React and Next.js, which I now use to build dynamic web applications. As I continue my studies in computer science and statistics at the University of Toronto, I am excited to apply my knowledge to real-world challenges and contribute to innovative solutions.
                                 </p>
                                 <div className='container' style={{justifyContent:'center'}}>
                                     <div className='container' style={{position: 'absolute',height: '1.3em', width: '100vw',borderRadius: '30px', backgroundColor: '#151821', filter: 'blur(10px)', paddingTop: '1em'}}></div>
